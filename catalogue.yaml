@@ -32,6 +32,6 @@
     name: create /app directory
     ansible.builtin.file:
       path: /app
-      state: diectory
+      state: directory
 
 
