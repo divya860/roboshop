@@ -12,7 +12,7 @@
       state: started
       enabled: yes
   - name: remove html directory
-    ansible.butiltin.file:
+    ansible.builtin.file:
       path: /usr/share/nginx/html
       state: absent
   - name: create html directory
@@ -35,7 +35,7 @@
     ansible.builtin.copy:
       src: roboshop.conf
       dest: /etc/nginx/default.d/roboshop.conf
-      
+
   - name: restart nginx
     ansible.builtin.service:
       state: started
