@@ -69,7 +69,7 @@
       name: mongodb-org
       state: installed
   
-  - name: install dependencies
+  - name: load catalogue data
     ansible.builtin.command: mongo --host 172.31.37.121 < /app/schema/catalogue.js
   
   - name: restart catalogue
